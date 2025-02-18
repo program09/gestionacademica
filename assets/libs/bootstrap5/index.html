@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../../libs/bootstrap5/bootstrap.min.css">
+</head>
+
+<body>
+
+    <div class="container py-5">
+        <div class="card">
+            <div class="card-header">BOTONES</div>
+            <div class="card-body">
+                <h4 class="card-title">solid</h4>
+                <button class="btn btn-primary">Primary</button>
+                <button class="btn btn-secondary">secondary</button>
+                <button class="btn btn-success">success</button>
+                <button class="btn btn-danger">danger</button>
+                <button class="btn btn-warning">warning</button>
+                <button class="btn btn-info">info</button>
+                <button class="btn btn-dark">dark</button>
+                <button class="btn btn-light">light</button>
+
+                <h4 class="card-title">Transparent</h4>
+                <button class="btn btn-primary-mica">Primary</button>
+                <button class="btn btn-secondary-mica">secondary</button>
+                <button class="btn btn-success-mica">success</button>
+                <button class="btn btn-danger-mica">danger</button>
+                <button class="btn btn-warning-mica">warning</button>
+                <button class="btn btn-info-mica">info</button>
+                <button class="btn btn-dark-mica">dark</button>
+                <button class="btn btn-light-mica">light</button>
+
+                <h4 class="card-title">Outline</h4>
+                <button class="btn btn-outline-primary tooltips">Primary
+                    <span class="tooltipx">Click me!</span>
+                </button>
+                <button class="btn btn-outline-secondary tooltips">secondary<span class="tooltipx">Click me!</span></button>
+                <button class="btn btn-outline-success">success</button>
+                <button class="btn btn-outline-danger">danger</button>
+                <button class="btn btn-outline-warning">warning</button>
+                <button class="btn btn-outline-info">info</button>
+                <button class="btn btn-outline-dark">dark</button>
+                <button class="btn btn-outline-light">light</button>
+                <hr>
+            </div>
+            <div class="card-footer text-muted">Footer</div>
+        </div>
+        <br>
+        <div class="card">
+            <div class="card-header">BADEG</div>
+            <div class="card-body">
+                <h4 class="card-title">solid</h4>
+                <span class="badge bg-primary">Primary</span>
+                <span class="badge bg-secondary">secondary</span>
+                <span class="badge bg-success">success</span>
+                <span class="badge bg-danger">danger</span>
+                <span class="badge bg-warning">warning</span>
+                <span class="badge bg-info">info</span>
+                <br><br>
+                <span class="badge bg-primary-mica">Primary</span>
+                <span class="badge bg-secondary-mica">secondary</span>
+                <span class="badge bg-success-mica">success</span>
+                <span class="badge bg-danger-mica">danger</span>
+                <span class="badge bg-warning-mica">warning</span>
+                <span class="badge bg-info-mica">info</span>
+
+            </div>
+            <div class="card-footer text-muted">Footer</div>
+        </div>
+        <br>
+        <div class="card">
+            <div class="card-header">ALERTS</div>
+            <div class="card-body">
+                <h4 class="card-title">solid</h4>
+                <div class="alert alert-primary alert-dismissible fade show" role="alert">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24"><g fill="none"><path fill="currentColor" fill-opacity="0.16" d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2S2 6.477 2 12s4.477 10 10 10"/><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="1.5" d="M12 8h.008M12 16v-5m10 1c0 5.523-4.477 10-10 10S2 17.523 2 12S6.477 2 12 2s10 4.477 10 10"/></g></svg>
+                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                    <strong>Alert Heading</strong> Alert Content
+                </div>
+
+                <div class="alert alert-secondary alert-dismissible fade show" role="alert">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 256 256"><g fill="currentColor"><path d="M144 69.09v101.82l-93.76 28.76A8 8 0 0 1 40 192V48a8 8 0 0 1 10.24-7.67Z" opacity="0.2"/><path d="m228.54 86.66l-176.06-54A16 16 0 0 0 32 48v144a16 16 0 0 0 16 16a16 16 0 0 0 4.52-.65L136 181.73V192a16 16 0 0 0 16 16h32a16 16 0 0 0 16-16v-29.9l28.54-8.75A16.09 16.09 0 0 0 240 138v-36a16.09 16.09 0 0 0-11.46-15.34M136 165l-88 27V48l88 27Zm48 27h-32v-15.18l32-9.82Zm40-54h-.11L152 160.08V79.92l71.89 22h.11v36Z"/></g></svg>
+                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                    <strong>Alert Heading</strong> Alert Content
+                </div>
+                <div class="alert alert-success alert-dismissible fade show" role="alert">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 256 256"><g fill="currentColor"><path d="M232 128c0 12.51-17.82 21.95-22.68 33.69c-4.68 11.32 1.42 30.65-7.78 39.85s-28.53 3.1-39.85 7.78C150 214.18 140.5 232 128 232s-22-17.82-33.69-22.68c-11.32-4.68-30.65 1.42-39.85-7.78s-3.1-28.53-7.78-39.85C41.82 150 24 140.5 24 128s17.82-22 22.68-33.69c4.68-11.31-1.42-30.65 7.78-39.85s28.54-3.1 39.85-7.78C106.05 41.82 115.5 24 128 24s22 17.82 33.69 22.68c11.32 4.68 30.65-1.42 39.85 7.78s3.1 28.53 7.78 39.85C214.18 106.05 232 115.5 232 128" opacity="0.2"/><path d="M225.86 102.82c-3.77-3.94-7.67-8-9.14-11.57c-1.36-3.27-1.44-8.69-1.52-13.94c-.15-9.76-.31-20.82-8-28.51s-18.75-7.85-28.51-8c-5.25-.08-10.67-.16-13.94-1.52c-3.56-1.47-7.63-5.37-11.57-9.14C146.28 23.51 138.44 16 128 16s-18.27 7.51-25.18 14.14c-3.94 3.77-8 7.67-11.57 9.14c-3.25 1.36-8.69 1.44-13.94 1.52c-9.76.15-20.82.31-28.51 8s-7.8 18.75-8 28.51c-.08 5.25-.16 10.67-1.52 13.94c-1.47 3.56-5.37 7.63-9.14 11.57C23.51 109.72 16 117.56 16 128s7.51 18.27 14.14 25.18c3.77 3.94 7.67 8 9.14 11.57c1.36 3.27 1.44 8.69 1.52 13.94c.15 9.76.31 20.82 8 28.51s18.75 7.85 28.51 8c5.25.08 10.67.16 13.94 1.52c3.56 1.47 7.63 5.37 11.57 9.14c6.9 6.63 14.74 14.14 25.18 14.14s18.27-7.51 25.18-14.14c3.94-3.77 8-7.67 11.57-9.14c3.27-1.36 8.69-1.44 13.94-1.52c9.76-.15 20.82-.31 28.51-8s7.85-18.75 8-28.51c.08-5.25.16-10.67 1.52-13.94c1.47-3.56 5.37-7.63 9.14-11.57c6.63-6.9 14.14-14.74 14.14-25.18s-7.51-18.27-14.14-25.18m-11.55 39.29c-4.79 5-9.75 10.17-12.38 16.52c-2.52 6.1-2.63 13.07-2.73 19.82c-.1 7-.21 14.33-3.32 17.43s-10.39 3.22-17.43 3.32c-6.75.1-13.72.21-19.82 2.73c-6.35 2.63-11.52 7.59-16.52 12.38S132 224 128 224s-9.15-4.92-14.11-9.69s-10.17-9.75-16.52-12.38c-6.1-2.52-13.07-2.63-19.82-2.73c-7-.1-14.33-.21-17.43-3.32s-3.22-10.39-3.32-17.43c-.1-6.75-.21-13.72-2.73-19.82c-2.63-6.35-7.59-11.52-12.38-16.52S32 132 32 128s4.92-9.15 9.69-14.11s9.75-10.17 12.38-16.52c2.52-6.1 2.63-13.07 2.73-19.82c.1-7 .21-14.33 3.32-17.43s10.39-3.22 17.43-3.32c6.75-.1 13.72-.21 19.82-2.73c6.35-2.63 11.52-7.59 16.52-12.38S124 32 128 32s9.15 4.92 14.11 9.69s10.17 9.75 16.52 12.38c6.1 2.52 13.07 2.63 19.82 2.73c7 .1 14.33.21 17.43 3.32s3.22 10.39 3.32 17.43c.1 6.75.21 13.72 2.73 19.82c2.63 6.35 7.59 11.52 12.38 16.52S224 124 224 128s-4.92 9.15-9.69 14.11m-40.65-43.77a8 8 0 0 1 0 11.32l-56 56a8 8 0 0 1-11.32 0l-24-24a8 8 0 0 1 11.32-11.32L112 148.69l50.34-50.35a8 8 0 0 1 11.32 0"/></g></svg>
+                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                    <strong>Alert Heading</strong> Alert Content
+                </div>
+                <div class="alert alert-danger alert-dismissible fade show" role="alert">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24"><g fill="none"><path fill="currentColor" fill-opacity="0.16" d="M3.23 7.913L7.91 3.23c.15-.15.35-.23.57-.23h7.05c.21 0 .42.08.57.23l4.67 4.673c.15.15.23.35.23.57v7.054c0 .21-.08.42-.23.57L16.1 20.77c-.15.15-.35.23-.57.23H8.47a.8.8 0 0 1-.57-.23l-4.67-4.673a.8.8 0 0 1-.23-.57V8.473c0-.21.08-.42.23-.57z"/><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="1.5" d="M12 16h.008M12 8v5M3.23 7.913L7.91 3.23c.15-.15.35-.23.57-.23h7.05c.21 0 .42.08.57.23l4.67 4.673c.15.15.23.35.23.57v7.054c0 .21-.08.42-.23.57L16.1 20.77c-.15.15-.35.23-.57.23H8.47a.8.8 0 0 1-.57-.23l-4.67-4.673a.8.8 0 0 1-.23-.57V8.473c0-.21.08-.42.23-.57z"/></g></svg>
+                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                    <strong>Alert Heading</strong> Alert Content
+                </div>
+                <div class="alert alert-warning alert-dismissible fade show" role="alert">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24"><g fill="none"><path fill="currentColor" fill-opacity="0.16" d="M10.575 5.217L3.517 17a1.667 1.667 0 0 0 1.425 2.5h14.116a1.666 1.666 0 0 0 1.425-2.5L13.426 5.217a1.666 1.666 0 0 0-2.85 0"/><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="1.5" d="M12 16h.008M12 10v3m-1.425-7.783L3.517 17a1.667 1.667 0 0 0 1.425 2.5h14.116a1.666 1.666 0 0 0 1.425-2.5L13.426 5.217a1.666 1.666 0 0 0-2.85 0"/></g></svg>
+                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                    <strong>Alert Heading</strong> Alert Content
+                </div>
+                <div class="alert alert-info alert-dismissible fade show" role="alert">
+                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                    <strong>Alert Heading</strong> Alert Content
+                </div>
+
+                <br><br>
+                <div class="alert alert-primary-mica alert-dismissible fade show" role="alert">
+                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                    <strong>Alert Heading</strong> Alert Content
+                </div>
+
+                <div class="alert alert-secondary-mica alert-dismissible fade show" role="alert">
+                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                    <strong>Alert Heading</strong> Alert Content
+                </div>
+                <div class="alert alert-success-mica alert-dismissible fade show" role="alert">
+                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                    <strong>Alert Heading</strong> Alert Content
+                </div>
+                <div class="alert alert-danger-mica alert-dismissible fade show" role="alert">
+                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                    <strong>Alert Heading</strong> Alert Content
+                </div>
+                <div class="alert alert-warning-mica alert-dismissible fade show" role="alert">
+                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                    <strong>Alert Heading</strong> Alert Content
+                </div>
+                <div class="alert alert-info-mica alert-dismissible fade show" role="alert">
+                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                    <strong>Alert Heading</strong> Alert Content
+                </div>
+
+
+            </div>
+            <div class="card-footer text-muted">Footer</div>
+        </div>
+        <br>
+        <div class="card">
+            <div class="card-header">DROPDOWN</div>
+            <div class="card-body">
+                <h4 class="card-title">Title</h4>
+                <div class="dropdown drop-1">
+                    <button class="drop-btn" type="button" id="triggerId" data-bs-toggle="dropdown" aria-haspopup="true"
+                        aria-expanded="false">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 32 32">
+                            <circle cx="8" cy="16" r="2" fill="currentColor" />
+                            <circle cx="16" cy="16" r="2" fill="currentColor" />
+                            <circle cx="24" cy="16" r="2" fill="currentColor" />
+                        </svg>
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="triggerId">
+                        <a class="dropdown-item disabled" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                viewBox="0 0 24 24">
+                                <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                    stroke-width="1.5"
+                                    d="M4 21h16M5.666 13.187A2.28 2.28 0 0 0 5 14.797V18h3.223c.604 0 1.183-.24 1.61-.668l9.5-9.505a2.28 2.28 0 0 0 0-3.22l-.938-.94a2.277 2.277 0 0 0-3.222.001z" />
+                            </svg>Actualizar</a>
+                        <a class="dropdown-item" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                viewBox="0 0 24 24">
+                                <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                    stroke-width="1.5"
+                                    d="m19.5 5.5l-.62 10.025c-.158 2.561-.237 3.842-.88 4.763a4 4 0 0 1-1.2 1.128c-.957.584-2.24.584-4.806.584c-2.57 0-3.855 0-4.814-.585a4 4 0 0 1-1.2-1.13c-.642-.922-.72-2.205-.874-4.77L4.5 5.5M3 5.5h18m-4.944 0l-.683-1.408c-.453-.936-.68-1.403-1.071-1.695a2 2 0 0 0-.275-.172C13.594 2 13.074 2 12.035 2c-1.066 0-1.599 0-2.04.234a2 2 0 0 0-.278.18c-.395.303-.616.788-1.058 1.757L8.053 5.5m1.447 11v-6m5 6v-6"
+                                    color="currentColor" />
+                            </svg>Eliminar</a>
+                        <a class="dropdown-item" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                viewBox="0 0 16 16">
+                                <path fill="currentColor"
+                                    d="M4.5 3A1.5 1.5 0 0 0 3 4.5v7A1.5 1.5 0 0 0 4.5 13h7a1.5 1.5 0 0 0 1.5-1.5V9.27a.5.5 0 0 1 1 0v2.23a2.5 2.5 0 0 1-2.5 2.5h-7A2.5 2.5 0 0 1 2 11.5v-7A2.5 2.5 0 0 1 4.5 2h2.23a.5.5 0 0 1 0 1zm4.27-.5a.5.5 0 0 1 .5-.5h4.23a.5.5 0 0 1 .5.5v4.23a.5.5 0 0 1-1 0V3.708L9.623 7.084a.5.5 0 1 1-.707-.707L12.293 3H9.269a.5.5 0 0 1-.5-.5" />
+                            </svg>Detalles</a>
+                    </div>
+                </div>
+
+                <div class="dropdown drop-2">
+                    <button class="drop-btn-img" type="button" id="triggerId" data-bs-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRDwmG52pVI5JZfn04j9gdtsd8pAGbqjjLswg&s"
+                            alt="">
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="triggerId">
+                        <a class="dropdown-item" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                viewBox="0 0 24 24">
+                                <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                    stroke-width="1.5"
+                                    d="M4 21h16M5.666 13.187A2.28 2.28 0 0 0 5 14.797V18h3.223c.604 0 1.183-.24 1.61-.668l9.5-9.505a2.28 2.28 0 0 0 0-3.22l-.938-.94a2.277 2.277 0 0 0-3.222.001z" />
+                            </svg>Perfíl</a>
+                        <a class="dropdown-item" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                viewBox="0 0 24 24">
+                                <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                    stroke-width="1.5"
+                                    d="m19.5 5.5l-.62 10.025c-.158 2.561-.237 3.842-.88 4.763a4 4 0 0 1-1.2 1.128c-.957.584-2.24.584-4.806.584c-2.57 0-3.855 0-4.814-.585a4 4 0 0 1-1.2-1.13c-.642-.922-.72-2.205-.874-4.77L4.5 5.5M3 5.5h18m-4.944 0l-.683-1.408c-.453-.936-.68-1.403-1.071-1.695a2 2 0 0 0-.275-.172C13.594 2 13.074 2 12.035 2c-1.066 0-1.599 0-2.04.234a2 2 0 0 0-.278.18c-.395.303-.616.788-1.058 1.757L8.053 5.5m1.447 11v-6m5 6v-6"
+                                    color="currentColor" />
+                            </svg>Condifuraciones</a>
+                        <a class="dropdown-item" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                viewBox="0 0 16 16">
+                                <path fill="currentColor"
+                                    d="M4.5 3A1.5 1.5 0 0 0 3 4.5v7A1.5 1.5 0 0 0 4.5 13h7a1.5 1.5 0 0 0 1.5-1.5V9.27a.5.5 0 0 1 1 0v2.23a2.5 2.5 0 0 1-2.5 2.5h-7A2.5 2.5 0 0 1 2 11.5v-7A2.5 2.5 0 0 1 4.5 2h2.23a.5.5 0 0 1 0 1zm4.27-.5a.5.5 0 0 1 .5-.5h4.23a.5.5 0 0 1 .5.5v4.23a.5.5 0 0 1-1 0V3.708L9.623 7.084a.5.5 0 1 1-.707-.707L12.293 3H9.269a.5.5 0 0 1-.5-.5" />
+                            </svg>Cerrar sesión</a>
+                    </div>
+                </div>
+
+            </div>
+            <div class="card-footer text-muted">Footer</div>
+        </div>
+        <br>
+        <div class="card">
+            <div class="card-header">MODAL</div>
+            <div class="card-body">
+                <!-- Modal trigger button -->
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalId">
+                    Launch
+                </button>
+
+                <!-- Modal Body -->
+                <!-- if you want to close by clicking outside the modal, delete the last endpoint:data-bs-backdrop and data-bs-keyboard -->
+                <div class="modal fade" id="modalId" tabindex="-1" data-bs-backdrop="static" data-bs-keyboard="false"
+                    role="dialog" aria-labelledby="modalTitleId" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="modalTitleId">
+                                    Modal title
+                                </h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">Body</div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+                                    Close
+                                </button>
+                                <button type="button" class="btn btn-primary">Save</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Optional: Place to the bottom of scripts -->
+
+
+            </div>
+            <div class="card-footer text-muted">Footer</div>
+        </div>
+        <br>
+        <div class="card">
+            <div class="card-header">INPUT</div>
+            <div class="card-body">
+
+                <div class="row">
+                    <form action="">
+                        <div class="row">
+                            <div class="col-6">
+                                <div class="mb-3">
+                                    <label for="" class="form-label">Name</label>
+                                    <input type="text" class="form-control" name="" id="" aria-describedby="helpId"
+                                        placeholder="" />
+                                    <small id="helpId" class="form-text text-muted">Help text</small>
+                                </div>
+                            </div>
+    
+                            <div class="col-6">
+                                <div class="mb-3">
+                                    <label for="" class="form-label">Name</label>
+                                    <input type="date" class="form-control" name="" id="" aria-describedby="helpId"
+                                        placeholder="" />
+                                    <small id="helpId" class="form-text text-muted">Help text</small>
+                                </div>
+                            </div>
+    
+                            <div class="col-6">
+                                
+                                <div class="mb-3">
+                                    <label for="" class="form-label">Name</label>
+                                    <input type="file" class="form-control" name="" id="" aria-describedby="helpId"
+                                        placeholder="" />
+                                    <small id="helpId" class="form-text text-muted">Help text</small>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                
+                                <div class="mb-3">
+                                    <label for="" class="form-label">Name</label>
+                                    <input type="time" class="form-control" name="" id="" aria-describedby="helpId"
+                                        placeholder="" />
+                                    <small id="helpId" class="form-text text-muted">Help text</small>
+                                </div>
+                            </div>
+    
+                            <div class="col-6">
+                                
+                                <div class="mb-3">
+                                    <label for="" class="form-label">Name</label>
+                                    <input type="number" class="form-control" name="" id="" aria-describedby="helpId" placeholder="" min="0" />
+                                    <small id="helpId" class="form-text text-muted">Help text</small>
+                                </div>
+                            </div>
+        
+                            <div class="col-6">
+                                <div class="mb-3">
+                                    <label for="" class="form-label">City</label>
+                                    <select
+                                        class="form-select "
+                                        name=""
+                                        id=""
+                                    >
+                                        <option value="" selected>Select one</option>
+                                        <option value="df">New Delhi</option>
+                                        <option value="df">Istanbul</option>
+                                        <option value="df">Jakarta</option>
+                                    </select>
+                                </div>
+                                
+                                
+                            </div>
+                        </div>
+
+                        <div class="form-check form-switch">
+                            <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault" />
+                            <label class="form-check-label" for="flexSwitchCheckDefault">Default switch checkbox input</label>
+                        </div>
+                        <div class="form-check form-switch">
+                            <input class="form-check-input" type="checkbox" id="flexSwitchCheckChecked" checked />
+                            <label class="form-check-label" for="flexSwitchCheckChecked">Checked switch checkbox input</label>
+                        </div>
+                        
+                        <button type="reset">dd</button>
+                    </form>
+
+                    
+                    
+                </div>
+                //sin enviar
+                <button class="btn btn-success" type="button" >
+                    <span class="spinner-border spinner-border-sm submit saved" role="status" aria-hidden="true" style="display:none"></span>
+                    <span class="icon icon-save"></span>
+                    <span class="text-btn">Guardar</span>
+                </button>
+                <button class="btn btn-primary" type="button">
+                    <span class="spinner-border spinner-border-sm submit updated" role="status" aria-hidden="true" style="display:none"></span>
+                    <span class="icon icon-update"></span>
+                    <span class="text-btn">Actualizar</span>
+                </button>
+                <button class="btn btn-secondary" type="button">
+                    <span class="spinner-border spinner-border-sm submit filtered" role="status" aria-hidden="true" style="display:none"></span>
+                    <span class="icon icon-search"></span>
+                    <span class="text-btn">Buscar</span>
+                </button>
+
+                //al enviar formularios  beforesend
+                <button class="btn btn-success" type="button" disabled>
+                    <span class="spinner-border spinner-border-sm submit saved" role="status" aria-hidden="true"></span>
+                    <span class="icon icon-save"></span>  //ocultar
+                    <span class="text-btn"></span>
+                </button>
+                <button class="btn btn-primary" type="button" disabled>
+                    <span class="spinner-border spinner-border-sm submit updated" role="status" aria-hidden="true"></span>
+                    <span class="icon icon-update"></span> //ocultar
+                    <span class="text-btn"></span>
+                </button>
+                <button class="btn btn-secondary" type="button" disabled>
+                    <span class="spinner-border spinner-border-sm submit filtered" role="status" aria-hidden="true"></span>
+                    <span class="icon icon-search"></span>  //ocultar
+                    <span class="text-btn"></span>
+                </button>
+
+                <form>
+                    <button class="btn btn-success saved" type="button">
+                        <span class="spinner-border spinner-border-sm submit saved" role="status" aria-hidden="true" style="display:none"></span>
+                        <span class="icon icon-save"></span>
+                        <span class="text-btn">Guardar</span>
+                    </button>
+                    <button class="btn btn-primary updated" type="button">
+                        <span class="spinner-border spinner-border-sm submit updated" role="status" aria-hidden="true" style="display:none"></span>
+                        <span class="icon icon-update"></span>
+                        <span class="text-btn">Actualizar</span>
+                    </button>
+                    <button class="btn btn-secondary filtered" type="button">
+                        <span class="spinner-border spinner-border-sm submit filtered" role="status" aria-hidden="true" style="display:none"></span>
+                        <span class="icon icon-search"></span>
+                        <span class="text-btn">Buscar</span>
+                    </button>
+                </form>
+                
+                
+            </div>
+            <div class="card-footer text-muted">Footer</div>
+        </div>
+        <br>
+
+        <div class="card">
+            <div class="card-header">TOAST</div>
+            <div class="card-body">
+                <div class="toast-container position-static">
+                    <div class="toast show" role="alert" aria-live="assertive" aria-atomic="true">
+                        <div class="toast-header">
+                            <img src="source" class="rounded me-2" alt="Bootstrap" />
+                            <strong class="me-auto">Bootstrap</strong>
+                            <small class="text-muted">just now</small>
+                            <button
+                                type="button"
+                                class="btn-close"
+                                data-bs-dismiss="toast"
+                                aria-label="Close"
+                            ></button>
+                        </div>
+                        <div class="toast-body">See? Just like this.</div>
+                    </div>
+                
+                    <div class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+                        <div class="toast-header">
+                            <img
+                                src="source"
+                                class="rounded me-2"
+                                alt="Bootstrap 2"
+                            />
+                            <strong class="me-auto">Bootstrap 2</strong>
+                            <small class="text-muted">just now</small>
+                            <button
+                                type="button"
+                                class="btn-close"
+                                data-bs-dismiss="toast"
+                                aria-label="Close"
+                            ></button>
+                        </div>
+                        <div class="toast-body">
+                            Heads up, toasts will stack automatically
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="card-footer text-muted">Footer</div>
+        </div>
+        
+
+
+
+    </div>
+
+
+
+
+
+    <script src="../bootstrap5/bootstrap.bundle.min.js"></script>
+
+
+
+</body>
+
+</html>

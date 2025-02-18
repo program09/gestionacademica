@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/css/icons.css">
+    <link rel="stylesheet" href="assets/libs/bootstrap5/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/app.css">
+    <link rel="stylesheet" href="assets/libs/scrool/scrool.css">
+
+    <link rel="stylesheet" href="assets/libs/table/tableGrid.css">
+    <link rel="stylesheet" href="assets/libs/select/select.css">
+</head>
+<body class="app">
+    <aside class="sidebar">
+        <div class="sidebar-header">
+            <a href="index.html" class="position-relative">
+                <img src="assets/images/2.png" class="logo-aside" alt="">
+                <span class="badge bg-primary-mica">CodAPY</span>
+            </a>
+            <button class="btn-icon close text-light" id="close-aside">
+                <span class="icon icon-close-outline"></span>
+            </button>
+        </div>
+        <div class="sidebar-body" style="height: auto; overflow: hidden;">
+            <ul class="list-main">
+                <li class="item-main">
+                    <a href="profile.html" class="link-main link">
+                        <div>
+                            <span class="icon icon-18 icon-user-outline"></span>
+                            Mi cuenta
+                        </div>
+                        <span class="badge bg-secondary-mica">New!</span>
+                    </a>
+                </li>
+            </ul>
+            <ul class="mb-5 list-main">
+                <li class="item-main">
+                    <a href="index.html" class="link-main link">
+                        <div>
+                            <span class="icon icon-18 icon-home"></span>
+                            Dashboard
+                        </div>
+                    </a>
+                </li>             
+                <li class="mt-3 item-title">Gestión académica</li>
+                <li class="item-main item-submenu">
+                    <a href="" class="link-main link">
+                        <div>
+                            <span class="icon icon-18 icon-square-academic"></span>
+                            Académico
+                        </div>
+                        <span class="icon icon-18 icon-right"></span>
+                    </a>
+                    <div class="list-submenu">
+                        <ul class="submenu">
+                            <li class="item">
+                                <a href="periodos.html" class="link">
+                                    <div>
+                                        <span class="icon icon-dot"></span>
+                                        Periodos
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="item">
+                                <a href="periodo-active.html" class="link">
+                                    <div>
+                                        <span class="icon icon-dot"></span>
+                                        Activar periodo
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="item-main item-submenu">
+                    <a href="" class="link-main link">
+                        <div>
+                            <span class="icon icon-18 icon-clipboard-list"></span>
+                            Asistencias
+                        </div>
+                        <span class="icon icon-18 icon-right"></span>
+                    </a>
+                    <div class="list-submenu">
+                        <ul class="submenu">
+                            <li class="item">
+                                <a href="attendance-new.html" class="link active">
+                                    <div>
+                                        <span class="icon icon-dot"></span>
+                                        Nueva del día
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="item">
+                                <a href="attendances-general.html" class="link">
+                                    <div>
+                                        <span class="icon icon-dot"></span>
+                                        Hitorial general
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="item">
+                                <a href="attendances-source.html" class="link">
+                                    <div>
+                                        <span class="icon icon-dot"></span>
+                                        Historial por curso
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>        
+                <li class="item-main active">
+                    <a href="sources.html" class="link-main link">
+                        <div>
+                            <span class="icon icon-18 icon-book"></span>
+                            Cursos
+                        </div>
+                    </a>
+                </li>
+                <li class="item-main item-submenu">
+                    <a href="" class="link-main link">
+                        <div>
+                            <span class="icon icon-18 icon-category"></span>
+                            Grupos
+                        </div>
+                        <span class="icon icon-18 icon-right"></span>
+                    </a>
+                    <div class="list-submenu">
+                        <ul class="submenu">
+                            <li class="item">
+                                <a href="levels.html" class="link">
+                                    <div>
+                                        <span class="icon icon-dot"></span>
+                                        Niveles
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="item">
+                                <a href="grades.html" class="link">
+                                    <div>
+                                        <span class="icon icon-dot"></span>
+                                        Grados
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="item">
+                                <a href="sections.html" class="link">
+                                    <div>
+                                        <span class="icon icon-dot"></span>
+                                        Secciones
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="item-main">
+                    <a href="calendar.html" class="link-main link">
+                        <div>
+                            <span class="icon icon-18 icon-calendar"></span>
+                            Horarios
+                        </div>
+                        <span class="badge bg-primary-mica">New!</span>
+                    </a>
+                </li>
+                <li class="item-main item-submenu">
+                    <a href="" class="link-main link">
+                        <div>
+                            <span class="icon icon-18 icon-file-check"></span>
+                            Matrículas
+                        </div>
+                        <span class="icon icon-18 icon-right"></span>
+                    </a>
+                    <div class="list-submenu">
+                        <ul class="submenu">
+                            <li class="item">
+                                <a href="inscription-new.html" class="link">
+                                    <div>
+                                        <span class="icon icon-dot"></span>
+                                        Nueva matrícula
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="item">
+                                <a href="inscriptions.html" class="link">
+                                    <div>
+                                        <span class="icon icon-dot"></span>
+                                        Historial
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                
+                <li class="mt-3 item-title">Sistema</li>
+                <li class="item-main item-submenu">
+                    <a href="" class="link-main link">
+                        <div>
+                            <span class="icon icon-18 icon-authorized"></span>
+                            Autenticación
+                        </div>
+                        <span class="icon icon-18 icon-right"></span>
+                    </a>
+                    <div class="list-submenu">
+                        <ul class="submenu">
+                            <li class="item">
+                                <a href="roles.html" class="link active">
+                                    <div>
+                                        <span class="icon icon-dot"></span>
+                                        Roles & Permisos
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="item">
+                                <a href="admins.html" class="link">
+                                    <div>
+                                        <span class="icon icon-dot"></span>
+                                        Administración
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="item">
+                                <a href="students.phtml" class="link">
+                                    <div>
+                                        <span class="icon icon-dot"></span>
+                                        Alumnos
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="item">
+                                <a href="teachers.html" class="link">
+                                    <div>
+                                        <span class="icon icon-dot"></span>
+                                        Profesores
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="item">
+                                <a href="others.html" class="link">
+                                    <div>
+                                        <span class="icon icon-dot"></span>
+                                        Otros
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="item-main item-submenu">
+                    <a href="" class="link-main link">
+                        <div>
+                            <span class="icon icon-18 icon-settings-linear"></span>
+                            Configuraciones
+                        </div>
+                        <span class="icon icon-18 icon-right"></span>
+                    </a>
+                    <div class="list-submenu">
+                        <ul class="submenu">
+                            <li class="item">
+                                <a href="smtp.html" class="link">
+                                    <div>
+                                        <span class="icon icon-dot"></span>
+                                        SMTP
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="item">
+                                <a href="system.html" class="link">
+                                    <div>
+                                        <span class="icon icon-dot"></span>
+                                        Sistema
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+            <ul class="mb-5 list-main">
+                <li class="item-title">
+                    Panel de profesor
+                </li>
+                <li class="item-main">
+                    <a href="teacher-calendar.html" class="link-main link">
+                        <div>
+                            <span class="icon icon-18 icon-calendar"></span>
+                            Mis horarios
+                        </div>
+                    </a>
+                </li>
+                <li class="item-main">
+                    <a href="teacehr-sources.html" class="link-main link">
+                        <div>
+                            <span class="icon icon-18 icon-book"></span>
+                            Mis cursos
+                        </div>
+                        <span class="badge bg-danger-mica">5</span>
+                    </a>
+                </li>
+
+                <li class="item-main item-submenu">
+                    <a href="" class="link-main link">
+                        <div>
+                            <span class="icon icon-18 icon-3d-select-solid"></span>
+                            Tutoría
+                        </div>
+                        <span class="icon icon-18 icon-right"></span>
+                    </a>
+                    <div class="list-submenu">
+                        <ul class="submenu">
+                            <li class="item">
+                                <a href="teachers-students.html" class="link active">
+                                    <div>
+                                        <span class="icon icon-dot"></span>
+                                        Alumnos
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="item">
+                                <a href="teacher-attendances.html" class="link">
+                                    <div>
+                                        <span class="icon icon-dot"></span>
+                                        Asistencias
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+            <ul class="mb-5 list-main">
+                <li class="item-title">Panel de alumno</li>
+                <li class="item-main">
+                    <a href="student-sources.html" class="link-main link">
+                        <div>
+                            <span class="icon icon-18 icon-book"></span>
+                            Mis cursos
+                        </div>
+                        <span class="badge bg-danger-mica">5</span>
+                    </a>
+                </li>
+                <li class="item-main">
+                    <a href="students-calendar.html" class="link-main link">
+                        <div>
+                            <span class="icon icon-18 icon-calendar"></span>
+                            Mi horario
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="sidebar-footer">
+            <ul class="list-main">
+                <li class="item-main">
+                    <a href="login.html" class="link-main link">
+                        <div>
+                            <span class="icon icon-18 icon-logout"></span>
+                            Cerrar sesión
+                        </div>
+                        <span class="badge bg-success-mica">Activo</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </aside>
+
+    <section class="section content-app">
+        <header class="header">
+            <div class="header-content">
+                <div class="gap-2 header-left df-center">
+                    <button class="btn-icon" id="btn-aside">
+                        <span class="icon icon-menu-left"></span>
+                    </button>
+                    <div class="logo-header">
+                        <a href="index.html" class="position-relative">
+                            <img src="assets/images/3.png" class="logo-light" alt="">
+                            <img src="assets/images/2.png" class="logo-dark" alt="">
+                        </a>
+                    </div>
+                </div>
+                <div class="gap-3 header-right df-center">
+                    <span class="badge bg-success-mica">Activo</span>
+                    
+                    <button class="btn-icon" id="theme-mode" role="status">
+                        <span class="icon icon-moon"></span>
+                    </button>
+                    <div class="dropdown drop-2">
+                        <button class="drop-btn-img" type="button" id="triggerId" data-bs-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRDwmG52pVI5JZfn04j9gdtsd8pAGbqjjLswg&s"
+                                alt="">
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="triggerId">
+                            <a class="dropdown-item" href="profile.html">
+                                <span class="icon icon-20 icon-user-outline"></span>
+                                Mi cuenta
+                            </a>
+                            <a class="dropdown-item" href="#">
+                                <span class="icon icon-20 icon-logout"></span>
+                                Cerrar sesión
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <main class="main">
+            <section class="page-title">
+                <h6>Usuarios</h6>
+                <nav class="breadcrumb">
+                    <a class="breadcrumb-item df-center" href="#">
+                        <span class="icon icon-18 icon-home-duotone-2"></span>
+                    </a>
+                    <span class="breadcrumb-item active" aria-current="page">Usuarios</span>
+                </nav>
+            </section>
+            <div class="root">
+                <section>
+                    <div class="card">
+                        <div class="card-header df-center-between">
+                            <h5>Administración</h5>
+                            <div class="gap-3 df-center">
+                                <button class="btn-icon position-relative btn-delete-selected" id="del-selected">
+                                    <span class="icon icon-delete-1"></span>
+                                    <span class="bottom-0 badge bg-danger-mica position-absolute end-60"></span>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="card-body">                             
+                            <div class="agGrid" id="myGrid" ></div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </main>
+        <footer class="footer">
+            <div class="footer-content">
+                <p>Power by <a href="">Yordi Alcántara Paico</a></p>
+            </div>
+        </footer>
+    </section>
+
+    
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="assets/libs/bootstrap5/bootstrap.bundle.min.js"></script>
+    <script src="assets/libs/scrool/scrool.js"></script>
+    <script src="assets/js/app.js"></script>
+
+    <!--PAGES SCRIPTS-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
+    <script src="assets/libs/table/ag-grid-community.js"></script>
+    <script src="assets/libs/table/ag-grid.js"></script>
+    <script src="assets/libs/select/select.js"></script>
+
+    <script src="assets/js/pages/periodos.js"></script>
+    <script>
+        //http://tom-select.js.org/plugins/
+        const select = new TomSelect("#select-state",{
+            theme: "bootstrap5",
+            plugins: ['remove_button'],
+            searchField: ['text', 'value'],
+            placeholder: "Buscar permisos..."
+        });
+        let valoresSeleccionados = ["AL", "NY", "TX"];
+        // Aplicar los valores al select
+        select.setValue(valoresSeleccionados);
+        /*let valores = select.getValue(); obtener valores selecionados*/
+        $('#clear-selected').on('click', function(){select.clear()})
+
+        $('form').on('reset', function(){select.setValue('');})
+
+    </script>
+
+</body>
+</html>

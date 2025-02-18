@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/css/icons.css">
+    <link rel="stylesheet" href="assets/libs/bootstrap5/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/app.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/perfect-scrollbar/1.5.5/css/perfect-scrollbar.min.css">
+    <link rel="stylesheet" href="assets/libs/table/tableGrid.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/perfect-scrollbar/1.5.5/perfect-scrollbar.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/ag-grid-community/dist/ag-grid-community.min.js"></script>
+</head>
+<body class="app">
+    <aside class="sidebar">
+        <div class="sidebar-header">
+            <a href="index.html" class="position-relative">
+                <img src="assets/images/2.png" class="logo-aside" alt="">
+                <span class="badge bg-primary-mica">CodAPY</span>
+            </a>
+            <button class="btn-icon close text-light" id="close-aside">
+                <span class="icon icon-close-outline"></span>
+            </button>
+        </div>
+        <div class="sidebar-body" style="height: auto; overflow: hidden;">
+            <ul class="list-main">
+                <li class="item-main">
+                    <a href="profile.html" class="link-main link">
+                        <div>
+                            <span class="icon icon-18 icon-user-outline"></span>
+                            Mi cuenta
+                        </div>
+                        <span class="badge bg-secondary-mica">New!</span>
+                    </a>
+                </li>
+            </ul>
+            <ul class="list-main mb-5">
+                <li class="item-main">
+                    <a href="index.html" class="link-main link">
+                        <div>
+                            <span class="icon icon-18 icon-home"></span>
+                            Dashboard
+                        </div>
+                    </a>
+                </li>             
+                <li class="item-title mt-3">Gestión académica</li>
+                <li class="item-main item-submenu">
+                    <a href="" class="link-main link">
+                        <div>
+                            <span class="icon icon-18 icon-square-academic"></span>
+                            Académico
+                        </div>
+                        <span class="icon icon-18 icon-right"></span>
+                    </a>
+                    <div class="list-submenu">
+                        <ul class="submenu">
+                            <li class="item">
+                                <a href="periodos.html" class="link">
+                                    <div>
+                                        <span class="icon icon-dot"></span>
+                                        Periodos
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="item">
+                                <a href="periodo-active.html" class="link">
+                                    <div>
+                                        <span class="icon icon-dot"></span>
+                                        Activar periodo
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="item-main item-submenu">
+                    <a href="" class="link-main link">
+                        <div>
+                            <span class="icon icon-18 icon-clipboard-list"></span>
+                            Asistencias
+                        </div>
+                        <span class="icon icon-18 icon-right"></span>
+                    </a>
+                    <div class="list-submenu">
+                        <ul class="submenu">
+                            <li class="item">
+                                <a href="attendance-new.html" class="link active">
+                                    <div>
+                                        <span class="icon icon-dot"></span>
+                                        Nueva del día
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="item">
+                                <a href="attendances-general.html" class="link">
+                                    <div>
+                                        <span class="icon icon-dot"></span>
+                                        Hitorial general
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="item">
+                                <a href="attendances-source.html" class="link">
+                                    <div>
+                                        <span class="icon icon-dot"></span>
+                                        Historial por curso
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>        
+                <li class="item-main  active">
+                    <a href="sources.html" class="link-main link">
+                        <div>
+                            <span class="icon icon-18 icon-book"></span>
+                            Cursos
+                        </div>
+                    </a>
+                </li>
+                <li class="item-main item-submenu">
+                    <a href="" class="link-main link">
+                        <div>
+                            <span class="icon icon-18 icon-category"></span>
+                            Grupos
+                        </div>
+                        <span class="icon icon-18 icon-right"></span>
+                    </a>
+                    <div class="list-submenu">
+                        <ul class="submenu">
+                            <li class="item">
+                                <a href="levels.html" class="link">
+                                    <div>
+                                        <span class="icon icon-dot"></span>
+                                        Niveles
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="item">
+                                <a href="grades.html" class="link">
+                                    <div>
+                                        <span class="icon icon-dot"></span>
+                                        Grados
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="item">
+                                <a href="sections.html" class="link">
+                                    <div>
+                                        <span class="icon icon-dot"></span>
+                                        Secciones
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="item-main">
+                    <a href="calendar.html" class="link-main link">
+                        <div>
+                            <span class="icon icon-18 icon-calendar"></span>
+                            Horarios
+                        </div>
+                        <span class="badge bg-primary-mica">New!</span>
+                    </a>
+                </li>
+                <li class="item-main item-submenu">
+                    <a href="" class="link-main link">
+                        <div>
+                            <span class="icon icon-18 icon-file-check"></span>
+                            Matrículas
+                        </div>
+                        <span class="icon icon-18 icon-right"></span>
+                    </a>
+                    <div class="list-submenu">
+                        <ul class="submenu">
+                            <li class="item">
+                                <a href="inscription-new.html" class="link">
+                                    <div>
+                                        <span class="icon icon-dot"></span>
+                                        Nueva matrícula
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="item">
+                                <a href="inscriptions.html" class="link">
+                                    <div>
+                                        <span class="icon icon-dot"></span>
+                                        Historial
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                
+                <li class="item-title mt-3">Sistema</li>
+                <li class="item-main item-submenu">
+                    <a href="" class="link-main link">
+                        <div>
+                            <span class="icon icon-18 icon-authorized"></span>
+                            Autenticación
+                        </div>
+                        <span class="icon icon-18 icon-right"></span>
+                    </a>
+                    <div class="list-submenu">
+                        <ul class="submenu">
+                            <li class="item">
+                                <a href="roles.html" class="link active">
+                                    <div>
+                                        <span class="icon icon-dot"></span>
+                                        Roles & Permisos
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="item">
+                                <a href="admins.html" class="link">
+                                    <div>
+                                        <span class="icon icon-dot"></span>
+                                        Administración
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="item">
+                                <a href="students.html" class="link">
+                                    <div>
+                                        <span class="icon icon-dot"></span>
+                                        Alumnos
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="item">
+                                <a href="teachers.html" class="link">
+                                    <div>
+                                        <span class="icon icon-dot"></span>
+                                        Profesores
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="item">
+                                <a href="others.html" class="link">
+                                    <div>
+                                        <span class="icon icon-dot"></span>
+                                        Otros
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="item-main item-submenu">
+                    <a href="" class="link-main link">
+                        <div>
+                            <span class="icon icon-18 icon-settings-linear"></span>
+                            Configuraciones
+                        </div>
+                        <span class="icon icon-18 icon-right"></span>
+                    </a>
+                    <div class="list-submenu">
+                        <ul class="submenu">
+                            <li class="item">
+                                <a href="smtp.html" class="link">
+                                    <div>
+                                        <span class="icon icon-dot"></span>
+                                        SMTP
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="item">
+                                <a href="system.html" class="link">
+                                    <div>
+                                        <span class="icon icon-dot"></span>
+                                        Sistema
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+            <ul class="list-main mb-5">
+                <li class="item-title">
+                    Panel de profesor
+                </li>
+                <li class="item-main">
+                    <a href="teacher-calendar.html" class="link-main link">
+                        <div>
+                            <span class="icon icon-18 icon-calendar"></span>
+                            Mis horarios
+                        </div>
+                    </a>
+                </li>
+                <li class="item-main">
+                    <a href="teacehr-sources.html" class="link-main link">
+                        <div>
+                            <span class="icon icon-18 icon-book"></span>
+                            Mis cursos
+                        </div>
+                        <span class="badge bg-danger-mica">5</span>
+                    </a>
+                </li>
+
+                <li class="item-main item-submenu">
+                    <a href="" class="link-main link">
+                        <div>
+                            <span class="icon icon-18 icon-3d-select-solid"></span>
+                            Tutoría
+                        </div>
+                        <span class="icon icon-18 icon-right"></span>
+                    </a>
+                    <div class="list-submenu">
+                        <ul class="submenu">
+                            <li class="item">
+                                <a href="teachers-students.html" class="link active">
+                                    <div>
+                                        <span class="icon icon-dot"></span>
+                                        Alumnos
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="item">
+                                <a href="teacher-attendances.html" class="link">
+                                    <div>
+                                        <span class="icon icon-dot"></span>
+                                        Asistencias
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+            <ul class="list-main mb-5">
+                <li class="item-title">Panel de alumno</li>
+                <li class="item-main">
+                    <a href="student-sources.html" class="link-main link">
+                        <div>
+                            <span class="icon icon-18 icon-book"></span>
+                            Mis cursos
+                        </div>
+                        <span class="badge bg-danger-mica">5</span>
+                    </a>
+                </li>
+                <li class="item-main">
+                    <a href="students-calendar.html" class="link-main link">
+                        <div>
+                            <span class="icon icon-18 icon-calendar"></span>
+                            Mi horario
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="sidebar-footer">
+            <ul class="list-main">
+                <li class="item-main">
+                    <a href="login.html" class="link-main link">
+                        <div>
+                            <span class="icon icon-18 icon-logout"></span>
+                            Cerrar sesión
+                        </div>
+                        <span class="badge bg-success-mica">Activo</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </aside>
+
+    <section class="section content-app">
+        <header class="header">
+            <div class="header-content">
+                <div class="header-left df-center gap-2">
+                    <button class="btn-icon" id="btn-aside">
+                        <span class="icon icon-menu-left"></span>
+                    </button>
+                    <div class="logo-header">
+                        <a href="index.html" class="position-relative">
+                            <img src="assets/images/3.png" class="logo-light" alt="">
+                            <img src="assets/images/2.png" class="logo-dark" alt="">
+                        </a>
+                    </div>
+                </div>
+                <div class="header-right df-center gap-3">
+                    <span class="badge bg-success-mica">Activo</span>
+                    
+                    <button class="btn-icon" id="theme-mode" role="status">
+                        <span class="icon icon-moon"></span>
+                    </button>
+                    <div class="dropdown drop-2">
+                        <button class="drop-btn-img" type="button" id="triggerId" data-bs-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRDwmG52pVI5JZfn04j9gdtsd8pAGbqjjLswg&s"
+                                alt="">
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="triggerId">
+                            <a class="dropdown-item" href="profile.html">
+                                <span class="icon icon-20 icon-user-outline"></span>
+                                Mi cuenta
+                            </a>
+                            <a class="dropdown-item" href="#">
+                                <span class="icon icon-20 icon-logout"></span>
+                                Cerrar sesión
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <main class="main">
+            <section class="page-title">
+                <h6>Inscripciones</h6>
+                <nav class="breadcrumb">
+                    <a class="breadcrumb-item df-center" href="#">
+                        <span class="icon icon-18 icon-home-duotone-2"></span>
+                    </a>
+                    <span class="breadcrumb-item active" aria-current="page">Inscripciones</span>
+                </nav>
+            </section>
+            <div class="root">
+                <section>
+                    <div class="card">
+                        <div class="card-header df-center-between">
+                            <h5>Periodo 2024</h5>
+                        </div>
+                        <div class="card-body">                             
+                            <form action="" method="post">
+                                <div class="row">
+                                    <div class="col-xl-4 col-lg-6 col-md-6 col-12">
+                                        <div class="mb-3">
+                                            <label for="search" class="form-label">Buscar alumno</label>
+                                            <input type="text" class="form-control" name="search" id="search" aria-describedby="helpId" placeholder="DNI, Código, Nombres" />
+                                            <small id="helpId" class="form-text text-muted">DNI, Código o Nombres</small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="df-center gap-2">
+                                    <button class="btn btn-primary-mica df-center gap-2 rounded-pill submit filtered" type="submit">
+                                        <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true" style="display:none"></span>
+                                        <span class="icon icon-search-duotone"></span>
+                                        <span class="text">Buscar</span>
+                                    </button>
+                                    <button type="reset" data-bs-dismiss="modal" class="btn btn-secondary-mica rounded-pill df-center gap-2 cancel">
+                                        <span class="icon icon-cancel-duotone"></span>
+                                        Descartar
+                                    </button>
+                                </div>  
+                            </form>
+                        </div>
+                    </div>
+                    <div class="card mt-3">
+                        <div class="card-header df-center-between">
+                            <h5>Alumnos</h5>
+                        </div>
+                        <div class="card-body px-sm-4 px-2">                             
+                            <div class="table-responsive">
+                                <table class="table table-borderless align-middle">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">Código</th>
+                                            <th scope="col">DNI</th>
+                                            <th scope="col">Nombres</th>
+                                            <th scope="col">Apellidos</th>
+                                            <th scope="col">Apellidos</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr class="">
+                                            <td scope="row">R1C1</td>
+                                            <td>R1C2</td>
+                                            <td>R1C3</td>
+                                            <td>R1C3</td>
+                                            <td>
+                                                <button class="btn btn-primary-mica rounded-pill" data-user="1" data-bs-toggle="modal" data-bs-target="#modalId">Inscribir</button>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </main>
+        <footer class="footer">
+            <div class="footer-content">
+                <p>Power by <a href="">Yordi Alcántara Paico</a></p>
+            </div>
+        </footer>
+    </section>
+
+    <!-- Modal Body-->
+    <div class="modal fade" id="modalId" tabindex="-1" data-bs-backdrop="static" data-bs-keyboard="false"  aria-hidden="true">
+        <div class="modal-dialog modal-dialog-scrollable" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalTitleId">
+                        Inscripciones
+                    </h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form action="" method="post">
+                        <input type="hidden" id="student" name="student" value="">
+                        <div class="mb-3">
+                            <label for="" class="form-label">Código</label>
+                            <input type="text" name="usercode" id="usercode" class="form-control" value="456756756" disabled placeholder="Example: 2024, 2024 I, 2024 II" autocomplete="off"/>
+                            <small id="helpId" class="text-muted">Help text</small>
+                        </div>
+                        <div class="mb-3">
+                            <label for="" class="form-label">DNI</label>
+                            <input type="text" name="userdni" id="userdni" class="form-control" value="45456465" disabled placeholder="Example: 2024, 2024 I, 2024 II" autocomplete="off"/>
+                            <small id="helpId" class="text-muted">Help text</small>
+                        </div>
+                        <div class="mb-3">
+                            <label for="" class="form-label">Alumno</label>
+                            <input type="text" name="username" id="username" class="form-control" value="Alcántara Paico, Yordi" disabled placeholder="Example: 2024, 2024 I, 2024 II" autocomplete="off"/>
+                            <small id="helpId" class="text-muted">Help text</small>
+                        </div>
+                        
+                        <div class="mb-3">
+                            <label for="" class="form-label">Nivel - Grado</label>
+                            <select class="form-select" name="" id="">
+                                <option value="" selected>Select one</option>
+                                <option value="1">New Delhi</option>
+                                <option value="2">Istanbul</option>
+                                <option value="3">Jakarta</option>
+                            </select>
+                        </div>
+                        <div class="mb-3">
+                            <label for="" class="form-label">Sección</label>
+                            <select class="form-select" name="" id="">
+                                <option value="" selected>Select one</option>
+                                <option value="1">New Delhi</option>
+                                <option value="2">Istanbul</option>
+                                <option value="3">Jakarta</option>
+                            </select>
+                        </div>
+
+                        <div class="df-center gap-2">
+                            <button class="btn btn-primary-mica df-center gap-2 rounded-pill submit saved" type="submit">
+                                <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true" style="display:none"></span>
+                                <span class="icon icon-save-duotone"></span>
+                                <span class="text">Guardar</span>
+                            </button>
+                            <button class="btn btn-success-mica df-center gap-2 rounded-pill submit updated" type="submit" style="display:none">
+                                <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true" style="display:none"></span>
+                                <span class="icon icon-save-duotone"></span>
+                                <span class="text">Actualizar</span>
+                            </button>
+                            <button type="reset" data-bs-dismiss="modal" class="btn btn-secondary-mica rounded-pill df-center gap-2 cancel">
+                                <span class="icon icon-cancel-duotone"></span>
+                                Descartar
+                            </button>
+                        </div>     
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="assets/libs/bootstrap5/bootstrap.bundle.min.js"></script>
+    
+    <script src="assets/js/app.js"></script>
+
+    <script>
+        $('form').on('reset', function(){
+            $('#usercode').attr('value','')
+            $('#userdni').attr('value','')
+            $('#username').attr('value','')
+        })
+    </script>
+
+</body>
+</html>
